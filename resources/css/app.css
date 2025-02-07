@@ -1,0 +1,9 @@
+
+
+/* /* @import url('bootstrap/dist/css/bootstrap.min.css'); */
+@import 'font-awesome/css/font-awesome.min.css';
+@import '@mdi/font/css/materialdesignicons.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

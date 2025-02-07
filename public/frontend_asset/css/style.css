@@ -1,0 +1,180 @@
+.fa {
+    font-weight: 900 !important;
+}
+.search .search-input input[type=text]::placeholder, .search .search-input input[type=text].focus {
+    background: #000000 !important;
+}
+
+ /*****************************************************************
+	Preview Header Buy Now
+*****************************************************************/
+
+.vfx_preview_header {
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	position: absolute;
+}
+.header_top {
+	display: inline-block;
+	padding: 11px 5px;
+	position: relative;
+	min-height: 50px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #ffffff;
+	width: 100%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.preview_envato_logo {
+	float: left;
+	padding: 0;
+}
+.preview_envato_logo a {
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	text-indent: -9999px;
+	height: 18px;
+	width: 152px;
+	background: url(https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg);
+	background-size: auto;
+	background-size: 152px 18px;
+}
+.vfx_preview_header + header:before {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	content: "";
+	height: 60px;
+	position: absolute;
+	background-size: 200% 200%;
+	-webkit-animation: gradientChange 5s ease infinite;
+			animation: gradientChange 5s ease infinite;
+	background-image: -webkit-gradient(linear, right top, left top, from(#3d9bfc), color-stop(#7b40e4), color-stop(#f53a8b), color-stop(#ee704a), to(#ddd24c));
+	background-image: linear-gradient(270deg, #3d9bfc, #7b40e4, #f53a8b, #ee704a, #ddd24c);
+}
+.vfx_preview_contant {
+	padding: 0 10px;
+	display: block;
+	margin: 0 auto;
+	width: max-content;
+}
+.vfx_preview_contant p{
+	margin-bottom:0;
+	color:#ffffff;
+}
+.vfx_preview_buy_now{
+	padding: 0 5px 0 10px;
+	display: block;
+	right: 0;
+	top:13px;
+	position: absolute;
+}
+.buy-now-btn{
+	background: #ffffff;
+	border-radius: 4px;
+	color: #fd0575;
+	font-size: 14px;
+	font-weight:700;
+	padding: 6px 20px;
+	line-height: 1.5;
+	text-transform:uppercase;
+	box-shadow:0 1px 8px rgba(0, 0, 0, 0.15);
+}
+.buy-now-btn:hover{
+	background:#b71850;
+	color:#ffffff;
+}
+
+@media only screen and (max-width:639px) {
+.vfx_preview_contant{
+	display:none;
+}
+}
+
+/*****************************************************************
+	CSS Animation - Start
+*****************************************************************/
+.layer {
+  position: relative !important;
+}
+
+@-webkit-keyframes dropDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes radiusAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+@keyframes radiusAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.radius_animation {
+  -webkit-animation: radiusAnimation 8s ease-in-out infinite;
+          animation: radiusAnimation 8s ease-in-out infinite;
+}
+/*****************************************************************
+	CSS Animation - End
+*****************************************************************/

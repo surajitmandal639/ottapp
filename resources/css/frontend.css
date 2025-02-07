@@ -1,0 +1,6 @@
+/* // resources\css\frontend.css */
+
+@import url('../../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url('../../public/frontend_asset/css/style.css');
+@import url('../../public/frontend_asset/css/megamenu.css');
+@import url('../../public/frontend_asset/css/responsive.css');

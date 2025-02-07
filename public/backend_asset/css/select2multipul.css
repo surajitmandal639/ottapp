@@ -1,0 +1,35 @@
+/* Custom styles for the react-dropdown-select component */
+.react-dropdown-select{
+    height: auto !important;
+}
+.react-dropdown-select-item {
+    border: none !important;
+    color: black !important;
+}
+
+.react-dropdown-select-dropdown {
+    border: none !important; /* No border for the dropdown */
+    border-radius: 4px !important; /* Rounded corners */
+}
+
+/* Apply hover styles to the dropdown items */
+.react-dropdown-select-item:hover {
+    background-color: #ff0015 !important;
+    color: white !important;
+}
+
+.react-dropdown-select .react-dropdown-select-input::placeholder {
+    color: white !important; /* Set the placeholder color to white */
+}
+
+.react-dropdown-select-dropdown-handle svg {
+    fill: #928f92 !important; /* Change SVG color to #125465 */
+}
+.react-dropdown-select-option{
+    background-color: #ff0015 !important;
+    color: white !important;
+}
+.react-dropdown-select-item-selected{
+    background-color: #ff0015 !important;
+    color: white !important;
+}
